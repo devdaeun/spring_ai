@@ -15,7 +15,7 @@ public class SortDeliveryAddressFacade {
     public List<SequencedDeliveryAddress> sortDeliveryAddress(SortDeliveryAddressRequest request) {
         return sortDeliveryAddressService.sortDeliveryAddress(
                 request.hubAddress(),
-                DeliveryAddressFormatter.format(request.deliveryAddress())
+                DeliveryAddressFormatter.format(request.deliveryAddresses())
         );
     }
 }
