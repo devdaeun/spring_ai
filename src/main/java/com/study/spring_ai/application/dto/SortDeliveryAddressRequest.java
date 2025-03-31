@@ -4,6 +4,6 @@ import java.util.List;
 
 public record SortDeliveryAddressRequest(
         String hubAddress,
-        List<?> deliveryAddress
+        List<DeliveryAddress> deliveryAddress
 ) {
 }
